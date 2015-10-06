@@ -38,4 +38,8 @@ User experience design is valuable if a company seeks to acquire regular users. 
 
 #### Which parts of the challenge did you find tedious?
 
-I had a hard time creating a picture of my site map. I used [writemaps](https://www.writemaps.com/), and after creating the site map, my only two options for sharing it were as a .csv file or copying the XML. Unfortunately at this point I don't know how to turn either of those options into a .png file or any other kind of image. So I cheated and took a screen shot of the webpage :(  I'm sorry, I had hoped to have time to ask my guide about it last night in my GPS, but unfortunately I didn't have time. And yes, I know, I'm only cheating myself. I will figure this out. Just not now. Sorry!!!
+There wasn't much on this challenge that I found tedious, but I ran into a bunch of hiccups and the challenge ended up taking me a long time to complete while I sorted through them.
+
+First, I had a hard time creating an image of my site map. I used [writemaps](https://www.writemaps.com/) to create a site map, and after creating it, my only two options for sharing it were as a .csv file or copying the XML. Unfortunately at this point I don't know how to turn either of those options into a .png file or any other kind of image. So I cheated and took a screen shot of the webpage :(  I'm sorry, I had hoped to have time to ask my guide about it last night in my GPS, but unfortunately I didn't have time. And yes, I know, I'm only cheating myself. I will figure this out. Just not now. Sorry!!!
+
+Then, I tried to work too fast to create my reflections file, and I ended up creating a rat's nest of extra files and copies of my site map image. Then of course I had a hard time with the relative link. I guess I should just chalk up the *literally* hours that I just spent on this to "getting familiar with GitHub, CLI, markdown language, etc." But it feels frustrating right this second.
