@@ -1,4 +1,4 @@
-First, here is ![Alt a relative path link] [sitemap.png] to my site map
+First, here is [relative path link](/sitemap.png) to my site map
 
 #### What are the 6 Phases of Web Design?
 
@@ -19,7 +19,7 @@ The primary goal of my site is to provide information about myself. My site will
 
 My target audience is future employers. My site will address them in a fun yet professional manner.
 
-# What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio? It's ok to have several actions at once, or different actions for different kinds of visitors.
+#### What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio? It's ok to have several actions at once, or different actions for different kinds of visitors.
 
 The primary action users will hopefully take at my site is to see my portfolio, and then want to contact me.
 
