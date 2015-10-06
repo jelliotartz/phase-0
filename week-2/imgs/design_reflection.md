@@ -1,4 +1,4 @@
-First, here is [relative path link](/sitemap.png) to my site map
+First, here is [relative path link](/week-2/imgs/sitemap.png) to my site map
 
 #### What are the 6 Phases of Web Design?
 
