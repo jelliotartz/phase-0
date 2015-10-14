@@ -23,3 +23,11 @@ Below are my inline screenshots:
 ![4: make equidistant](./3.4-screenshots/Screen Shot 2015-10-13 at 9.37.34 PM.png "4: make equidistant")
 
 ![5: squares](./3.4-screenshots/Screen Shot 2015-10-13 at 9.42.39 PM.png "5: squares")
+
+![6: footer](./3.4-screenshots/Screen Shot 2015-10-13 at 9.54.08 PM.png "6: footer")
+
+![7: header](./3.4-screenshots/Screen Shot 2015-10-13 at 10.09.02 PM.png "7: header")
+
+![8: sidebar](./3.4-screenshots/Screen Shot 2015-10-13 at 10.23.31 PM.png "8: sidebar")
+
+![9: get creative](./3.4-screenshots/Screen Shot 2015-10-13 at 10.33.39 PM.png "9: get creative")
