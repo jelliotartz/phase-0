@@ -12,8 +12,6 @@ a:visited { color: #ff0000; }
 .col-dbl { -webkit-column-count: 2;
 }
 
-.lst-dsc { list-style-position: inside; }
-
 .bdr-bot {
   border-bottom: 1px solid #333333;
 
@@ -24,7 +22,7 @@ a:visited { color: #ff0000; }
 
 }
 
-
+.lst-dsc { list-style-position: inside; }
 
 .lnht-nrm {line-height: 3.5em; }
 .lhnt-sm {line-height: 1em; }
@@ -46,3 +44,4 @@ a:visited { color: #ff0000; }
 .t-lg { font-size: 1.1em; }
 .t-xl { font-size: 2em; }
 
+.fl-r {float: right;}
