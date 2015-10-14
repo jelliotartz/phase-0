@@ -1,3 +1,33 @@
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+The link belongs in the <head> element of the HTML file, and it's important to get the path correctly linking the HTML and CSS (i.e., either in the same folder, or in a nearby directory)
+
+It's also possible to link more than one CSS file or other external files to an HTML file.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+It was pretty hard. I used text-indent, padding, line-height, list-style-position, and display: block to position my text. There were a few places where I know that I didn't use a very effective method (i.e., my code smells), such as using text-indent to get the small text aligned beneath the body list points (e.g., Updated August 7th beneath Annual and Interim Reports). I have a feeling this won't work across browsers and devices.
+
+I tried to use "Atomic CSS" conventions, as outlined by J. Ky Marsh in the "CSS sucks" video. I did find the convention helpful, although I think I did a kinda substandard job of implementing it correctly. But it's my first time, so I'm trying not to judge myself too harshly on it.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+Color and background color were pretty simple for this site: a basic black color for the top and bottom text, different colors for links and visited links, and a basic white background.
+
+I think my most effective use of Atomic CSS was in the font size. I set up 5 sizes using .t-xsm-xl classes, and was able to use the classes to manipulate all the text on the site in a relatively efficient manner. I saw the logic of the Atomic CSS technique and hope I can continue to get better at adapting it.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes, I used a lot of classes. At first we had an ID for the Geico ad section, but I ended up going with class-based CSS there as well. I chose classes because at this point I'm playing around with the idea of using the Atomic CSS conventions, which rely heavily on classes.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+The actual B-H site has all its style added to the HTML, which is not best practice. I'm definitely not happy with the cleanliness state of my code, but it's a step up from the actual B-H site since it actually has an associated stylesheet.
+
+*/
+
+
 html {
 
 color: #000080;
@@ -29,7 +59,7 @@ a:visited { color: #ff0000; }
 
 .pdg-top { padding-top: 1em; }
 .pdg-bot { padding-bottom: 1em; }
-.pdg-lft {padding-left: 4em; }
+.pdg-lft { padding-left: 4em; }
 
 .txi-std {text-indent: 1.2em; }
 
@@ -43,5 +73,3 @@ a:visited { color: #ff0000; }
 .t-std { font-size: .95em; }
 .t-lg { font-size: 1.1em; }
 .t-xl { font-size: 2em; }
-
-.fl-r {float: right;}
