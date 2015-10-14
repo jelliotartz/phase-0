@@ -16,4 +16,10 @@ Below are my inline screenshots:
 
 ![1: Change the colors](./3.4-screenshots/Screen Shot 2015-10-13 at 9.14.45 PM.png "1: Change the colors")
 
-![2: column](/3.4-screenshots/Screen Shot 2015-10-13 at 9.21.51 PM.png "2: column")
+![2: column](./3.4-screenshots/Screen Shot 2015-10-13 at 9.21.51 PM.png "2: column")
+
+![3: row](./3.4-screenshots/Screen Shot 2015-10-13 at 9.27.35 PM.png "3: row")
+
+![4: make equidistant](./3.4-screenshots/Screen Shot 2015-10-13 at 9.37.34 PM.png "4: make equidistant")
+
+![5: squares](./3.4-screenshots/Screen Shot 2015-10-13 at 9.42.39 PM.png "5: squares")
