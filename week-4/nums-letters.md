@@ -43,7 +43,7 @@ Local variables are strings or numbers stored in your computer's memory. In Ruby
 
 #####How was this challenge? Did you get a good review of some of the basics?
 
-Yep! Feels good to be back in Ruby-mode! :)
+I thought this challenge was a nice change of pace from CSS, which was starting to make me want to claw my eyes out. It feels good to be back in Ruby-mode! :)
 
 #####Here are some links to my challenge solution files
 
