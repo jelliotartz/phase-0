@@ -2,7 +2,7 @@
 
 #####What does puts do?
 
-Puts is ruby shorthand for "put string". It simply outputs to the console, rather than returns something (i.e., pass on information). It's a useful method for seeing output in the console.
+Puts is ruby shorthand for "put string". It simply outputs its result to the console, rather than returning something (i.e., passing on information). It's a useful method for just seeing output in the console.
 
 
 #####What is an integer? What is a float?
@@ -35,7 +35,7 @@ Float division returns the quotient of two numbers using floating point numbers,
 
 #####What are strings? Why and when would you use them?
 
-Strings are groups of letters. In Ruby, strings are defined using single quotation marks (''). You use strings when you want to output and manipulate things other than numbers.
+Strings are groups of letters. In Ruby, strings are defined using single quotation marks ('') at the beginning and end of the string. You use strings when you want to output and manipulate things other than numbers.
 
 #####What are local variables? Why and when would you use them?
 
