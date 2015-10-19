@@ -16,10 +16,10 @@ Float division returns the quotient of two numbers using floating point numbers,
 
 #####Here are my ruby programs that calculate the number of hours in a year and number of minutes in a decade:
 
-'''ruby
+```ruby
 puts 24*365
 puts 60*24*365*10
-'''
+```
 
 #####How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 
