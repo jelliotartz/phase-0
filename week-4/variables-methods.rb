@@ -74,7 +74,8 @@ puts(str7.ljust(line_width/3) + str8.center(line_width/3) + str9.rjust(line_widt
 
 # How do you run an RSpec file from the command line?
 
-# Type "rspec filename.rb". You'll want to make sure you are running a file that is meant to analyze your 'target file', rather than just running rspec on your code.
+# Type "rspec filename.rb". You'll want to make sure you are running a file that is meant
+# to analyze your 'target file', rather than just running rspec on your code.
 
 # What was confusing about this material? What made sense?
 #
@@ -89,6 +90,6 @@ puts(str7.ljust(line_width/3) + str8.center(line_width/3) + str9.rjust(line_widt
 #
 # Here are links to my exercise solution files:
 #
+# 4.3.1: https://github.com/jelliotartz/phase-0/blob/master/week-4/address/my_solution.rb
 #
-#
-#
+# 4.3.2: https://github.com/jelliotartz/phase-0/blob/master/week-4/math/my_solution.rb
