@@ -1,7 +1,7 @@
 # Format an Address
 
-# I worked on this challenge mostly by myself, but with a little help at the end from Will
-# Brinkert. Thanks for your help, Will!
+# I worked on this challenge mostly by myself, but with a little help
+# at the end from Will Brinkert. Thanks for your help, Will!
 
 
 # Your Solution Below
