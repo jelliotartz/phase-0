@@ -13,10 +13,20 @@
 # Your Solution Below
 
 
-
 def smallest_integer(list_of_nums)
-  p list_of_nums.sort.reverse.last
+  lowest = list_of_nums[0]
+  list_of_nums.each do |number|
+    if number < lowest
+      lowest = number
+    end
+  end
+  lowest
 end
+
+
+# def smallest_integer(list_of_nums)
+#   p list_of_nums.sort.reverse.last
+# end
 
 
 

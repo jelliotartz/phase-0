@@ -15,26 +15,45 @@
 # Your Solution Below
 
 def count_between(list_of_integers, lower_bound, upper_bound)
+  numbers_in_range = []
 
-  if lower_bound > upper_bound
+  if list_of_integers == []
     return 0
   end
 
-  if lower_bound == upper_bound
-    return list_of_integers.size
+  list_of_integers.each do |integer|
+    if integer >= lower_bound && integer <= upper_bound
+      numbers_in_range << integer
+    end
   end
 
-  if list_of_integers.reject { |a| a > lower_bound }
-
-    list_of_integers.reverse!.pop
-    list_of_integers
-  end
-
-  if list_of_integers.each { |a| a > lower_bound} && list_of_integers.each { |a| a < upper_bound}
-    list_of_integers.size
-  end
-  # list_of_integers.size
+  numbers_in_range.size
 end
+
+
+
+
+# def count_between(list_of_integers, lower_bound, upper_bound)
+
+#   if lower_bound > upper_bound
+#     return 0
+#   end
+
+#   if lower_bound == upper_bound
+#     return list_of_integers.size
+#   end
+
+#   if list_of_integers.reject { |a| a > lower_bound }
+
+#     list_of_integers.reverse!.pop
+#     list_of_integers
+#   end
+
+#   if list_of_integers.each { |a| a > lower_bound} && list_of_integers.each { |a| a < upper_bound}
+#     list_of_integers.size
+#   end
+#   # list_of_integers.size
+# end
 
 
 # count_between([1, 1, 1], 1, 1)
