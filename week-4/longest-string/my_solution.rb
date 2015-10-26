@@ -12,6 +12,22 @@
 
 
 # Your Solution Below
+
 def longest_string(list_of_words)
-  p list_of_words.max {|a,b| a.size <=> b.size}
+  long_string = list_of_words[0]
+  list_of_words.each do |measure|
+    if long_string.size < measure.size
+      long_string = measure
+    end
+
+  end
+  p long_string
 end
+
+
+# the method below also passes the rspec and accomplishes the same
+# task, using more of ruby's built-in methods.
+
+# def longest_string(list_of_words)
+#   p list_of_words.max {|a,b| a.size <=> b.size}
+# end

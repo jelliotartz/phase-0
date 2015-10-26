@@ -11,24 +11,6 @@
 # If +list_of_words+ is empty the method should return nil
 
 #Your Solution Below
-# def shortest_string(list_of_words)
-#   p list_of_words.min {|a,b| a.size <=> b.size}
-# end
-
-
-# def shortest_string(list_of_words)
-#   short_string = list_of_words[0]
-#   list_of_words.each do |measure|
-#     if short_string.size < measure.size
-#       short_string
-#     end
-
-#   end
-#   p short_string
-# end
-
-# shortest_string(["goldfish", "cheese", "bish", "book"])
-
 
 
 def shortest_string(list_of_words)
@@ -43,14 +25,12 @@ def shortest_string(list_of_words)
 end
 
 
+# the method below also passes the rspec and accomplishes the same
+# task, using more of ruby's built-in methods.
 
-shortest_string(["goldfish", "cheese", "nola", "books", "sophie"])
-
-
-### here's the easiest way
-def shortest_string(list_of_words)
-  p list_of_words.min { |a, b| a.size <=> b.size }
-end
+# def shortest_string(list_of_words)
+#   p list_of_words.min { |a, b| a.size <=> b.size }
+# end
 
 
 #### pseudocode ####

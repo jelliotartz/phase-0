@@ -24,6 +24,9 @@ def smallest_integer(list_of_nums)
 end
 
 
+# the method below also passes the rspec and accomplishes the same
+# task, using more of ruby's built-in methods.
+
 # def smallest_integer(list_of_nums)
 #   p list_of_nums.sort.reverse.last
 # end
