@@ -43,10 +43,6 @@ def total(array)
   sum
 end
 
-# array = [3, 4, 2, 6, 8]
-# 16+7=23
-# p total(array)
-
 
 
 
@@ -92,16 +88,12 @@ end
 
 ######
 
-# def total(array)
-#   x=array.inject(:+)
-#   p x
-# end
+
 
 def sentence_maker(strings)
   sentance = ""
   strings.each do |word|
-    sentance += word + " "
-#     sentance = sentance + " " + add_together
+    sentance += word.to_s + " "
   end
   sentance.strip!
   sentance.capitalize + "."
@@ -109,11 +101,14 @@ def sentence_maker(strings)
 end
 
 
-### here's another supereasy ruby tool to cut down on code labor
+### here are two other methods that pass the rspec test and make use
+### of some handy ruby methods to accomplish the challenge:
 
-def sentence_maker(strings)
-  strings.join(" ").capitalize + "."
-end
-strings = ["make", "this", "a", "line"]
+# def sentence_maker(strings)
+#   strings.join(" ").capitalize + "."
+# end
 
-p sentence_maker(strings)
+# def total(array)
+#   x=array.inject(:+)
+#   p x
+# end
