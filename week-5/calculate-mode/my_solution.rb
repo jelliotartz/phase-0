@@ -40,11 +40,17 @@
 
 # - output the items that have the highest count.
 
-# Determine the highest count value set highest value tracker to 0
-# create container to hold modes Loop through the container if value >
-# tracker    set tracker = value    reset mode container to empty
-# put current element into mode container end if if value = tracker
-# add current element to container END LOOP
+# Determine the highest count value
+# set highest value tracker to 0
+# create container to hold modes
+# Loop through the container
+# if value > tracker
+#    set tracker = value
+#    reset mode container to empty
+#    put current element into mode container
+# end if
+# if value = tracker add current element to container
+# END LOOP
 
 # Return these elements that are in the mode container
 
