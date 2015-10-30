@@ -29,3 +29,5 @@ describe Die do
       expect(die.sides).to eq sides
     end
   end
+
+end
