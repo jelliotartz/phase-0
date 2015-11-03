@@ -92,9 +92,13 @@ p serving_size_calc("cookie", 10)
 # the code started to make more sense to me.
 
 
-# Did you learn any new methods? What did you learn about them? No,
-# but I did get some practice accessing keys and values of hashes,
-# which is still valuable for me at this point.
+# Did you learn any new methods? What did you learn about them?
+
+# No, but I did get some practice accessing keys and values of hashes,
+# which is still valuable for me at this point. Our guide did suggest
+# using .has_key? for the portion of the method that raises the
+# ArgumentError (line 60, above), which is still basically a 'new
+# method' for me.
 
 # What did you learn about accessing data in hashes?
 
