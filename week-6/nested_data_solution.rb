@@ -71,6 +71,24 @@ end
 
 p startup_names
 
+## Jacob Crofts' awesome refactor of startup_names ##
+
+startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+
+def add_to_all(array, thing_to_add)
+  array.map! do |element|
+    element.is_a?(Array) ? add_to_all(element, thing_to_add) : element +
+      thing_to_add
+  end
+end
+
+add_to_all(startup_names, "ly")
+
+print startup_names
+
+
+
+
 =begin
 
 Reflections:
@@ -112,7 +130,18 @@ Also, the << "shovel" method has the same effect as the + method in
 the bonus exercise where you add a string onto a nested array of
 strings.
 
+Post-script: Check out Jacob Crofts' awesome refactor solution to the
+bonus challenge! It uses a ternary operator (the ? followed by : on
+line 80) combined with a recursive method call (on the left side of
+the : ) to keep 'drilling down' into the nested array until it has
+reached the bottom; and whenever it doesn't encounter a nested array,
+it does the desired task of adding "ly" to the element. Jon Clayton
+loves ternaries and introduced me to them last week, and I bet he and
+the coder golf community would approve of this awesome refactor!
 
+I love ternaries every time I see them in code, but I'm not at the
+level where I'm ready to employ them in my own solutions yet... maybe
+me code pretty one day like these fine gentlemen :)
 
 Instructional play-time
 
