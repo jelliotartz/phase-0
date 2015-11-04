@@ -93,6 +93,8 @@ print startup_names
 
 Reflections:
 
+By the way, I paired with Jacob Crofts on this challenge.
+
 What are some general rules you can apply to nested arrays?
 
 Symbols must be referred to with the colon on the left side of the
