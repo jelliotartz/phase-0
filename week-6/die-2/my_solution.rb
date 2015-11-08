@@ -54,8 +54,10 @@ end
 
 
 # Driver code
-# p Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
 
+# game = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
+
+# p game.roll
 
 
 
