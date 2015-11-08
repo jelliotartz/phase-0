@@ -1,9 +1,6 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-
-
-
 # I worked on this challenge with Syema Ailia.
 # I spent 5 hours on this challenge.
 
