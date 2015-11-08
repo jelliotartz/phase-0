@@ -98,8 +98,7 @@ class GuessingGame
   end
 
   def solved?
-    return true if @guess == @answer
-    false
+    @guess == @answer ? true : false
   end
 end
 
@@ -111,7 +110,7 @@ end
 How do instance variables and methods represent the characteristics
 and behaviors (actions) of a real-world object?
 
-*** I'm not sure how to answer this question.
+The language of this question is confusing to me, in the sense that I'm not sure what is meant by a "real-world object". Is the question trying to get me to explore the idea of inheritance in ruby? If so, why not just say so? Is the question trying to get me to explore how instance variables are different than local ones? Again, using the phrase "real-world object" seems not to suggest this to me... but I feel like I'm missing something. I'll continue to ruminate on this, and anyone who reads this and can fill me in, please do.
 
 When should you use instance variables? What do they do for you?
 
