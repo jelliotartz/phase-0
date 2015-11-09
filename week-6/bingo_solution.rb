@@ -167,12 +167,11 @@ new_game.display
 # Reflections on refactor.
 
 I rethought my approach to the challenge and pretty much started fresh
-for the refactor. I knew that my inital solution and refactor were not
-really effective, since they only searched for integer matches and
-replaced everything they found - so if you randomly generated the
-integer 8, for example, the output board would have X3 for 83, 6X for
-68, XX for 88, etc. Obviously not what the solution for the challenge
-expects.
+for the refactor. I knew that my inital solution was not really
+effective, since they only searched for integer matches and replaced
+everything they found - so if you randomly generated the integer 8,
+for example, the output board would have X3 for 83, 6X for 68, XX for
+88, etc. Obviously not what the solution for the challenge expects.
 
 For the refactor, I created separate variables for the letters and
 numbers, and did not worry about combining them into their own
