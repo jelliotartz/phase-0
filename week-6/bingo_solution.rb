@@ -176,11 +176,49 @@ new_game.call
 new_game.check(board)
 
 
+
+#### second refactor
+
+class BingoBoard
+
+  def initialize(board)
+    @bingo_board = board
+  end
+
+  def new_call
+    @letters = ["B", "I", "N", "G", "O"]
+    @number = 1 + rand(100)
+    @letter = @letters.sample
+    p "The call is #{@letter} #{@number}"
+  end
+
+  def new_check
+    column = @letters.index(@letter) #=> will evaluate to the column integer of B I N G or O depending on which is @letter
+    @bingo_board.map! do |row|
+      if row[column] == @number
+        row[column] = "X"
+      end
+      row
+    end
+  end
+
+  def display
+    @bingo_board.each do |row|
+      p row
+    end
+  end
+
+end
+
+
+
 #Reflection
 
 =begin
 
 How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+
+
 
 What are the benefits of using a class for this challenge?
 
