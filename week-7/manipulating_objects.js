@@ -1,6 +1,6 @@
  // Manipulating JavaScript Objects
 
-// I worked on this challenge: [by myself, with: ]
+// I worked on this challenge by myself.
 
 // There is a section below where you will write your code.
 
@@ -16,25 +16,78 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+var adam = {
+  name: "Adam"
+
+}
+
+terah.spouse = adam
+terah.weight = 125
+delete terah.eyeColor
+adam.spouse = terah
+terah.children = {}
+carson = {}
+terah.children.carson = {
+  name: "Carson"
+}
+carter = {}
+terah.children.carter = {
+  name: "Carter"
+}
+colton = {}
+terah.children.colton = {
+  name: "Colton"
+}
+adam.children = {}
+adam.children = terah.children
+
+
+/*
+
+__________________________________________
+Reflections
+
+What tests did you have trouble passing? What did you do to make it
+pass? Why did that work?
+
+I had trouble with test 3. I was trying to create a spouse property
+that had its value equal to a string, "adam", instead of setting it
+equal to the object adam. At first I thought I was doing something
+wrong in terms of how to add a key/value pair to an object, but
+eventually I realized that I was kinda "reading" the question
+incorrectly, in the sense that it wanted me to make terah's spouse the
+**object** adam, not some string of letters that spells the word adam.
+
+I had similar issues when I got down to the tests regarding the
+children (mostly 8 and 9). I got through this hiccup a little more
+quickly, basically by trial and error, eventually figuring out that I
+needed to create an empty object (yes, I see the birth parallel
+there), then set that empty object as part of terah.children with dot
+notation (kinda like creating the birth certificate and writing
+Terah's name as the mother), and add key/value pairs, like the name
+Carter, therein.
+
+How difficult was it to add and delete properties outside of the
+object itself?
+
+I wouldn't go so far as to say it went smoothly. It seems like it's
+all pretty basic, but it wasn't exactly a walk in the park. Once I get
+a bit more comfortable with the syntax it will probably get easier.
+
+
+What did you learn about manipulating objects in this challenge?
+
+I learned basically everything I know about object manipulation in JS,
+since my brain was pretty much a blank slate before this (yes, I did
+7.2 and 7.3 before I tackled this, and watched the videos, and I had
+started codecademy JS a few months ago.) Regardless of my prep
+experience, JS still feels pretty new, and so there was some flailiing
+and unfamiliarity as I worked through this challenge. But mission
+accomplished, and experience gained with manipulating objects!
 
 
 
-
-
-
-
-
-
-
-// __________________________________________
-// Reflection: Use the reflection guidelines
-//
-//
-//
-//
-//
-//
-
+*/
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
