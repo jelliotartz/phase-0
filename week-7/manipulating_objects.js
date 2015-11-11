@@ -61,11 +61,10 @@ incorrectly, in the sense that it wanted me to make terah's spouse the
 I had similar issues when I got down to the tests regarding the
 children (mostly 8 and 9). I got through this hiccup a little more
 quickly, basically by trial and error, eventually figuring out that I
-needed to create an empty object (yes, I see the birth parallel
-there), then set that empty object as part of terah.children with dot
-notation (kinda like creating the birth certificate and writing
-Terah's name as the mother), and add key/value pairs, like the name
-Carter, therein.
+needed to create an empty object (Is it just me, or is there kinda a
+weird birth metaphor here?), then set that empty object as part of
+terah.children with dot notation, and then add key/value pairs, like
+the name Carter, therein.
 
 How difficult was it to add and delete properties outside of the
 object itself?
