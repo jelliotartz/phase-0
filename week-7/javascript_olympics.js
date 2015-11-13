@@ -7,32 +7,28 @@
 
 // Bulk Up
 
-
 var athletes = {
   name: {},
   event: {}
 };
 
 function win(athletes) {
-  console.log(athletes.name + " wins the " + athletes.event)
-};
+  return athletes.name + " wins the " + athletes.event;
+}
 
+athletes.name = "Sarah Hughes";
+athletes.event = "Hurdles";
 
-athletes.name = "Sarah Hughes"
-athletes.event = "hurdles"
-
-console.log(win(athletes))
-
+console.log(win(athletes));
 
 
 // Jumble your words
 
 function reverse_string(string) {
   return string.split('').reverse().join('');
-};
+}
 
 console.log(reverse_string("James"));
-
 
 
 // 2,4,6,8
@@ -40,38 +36,43 @@ console.log(reverse_string("James"));
 var inputArray = [1, 3, 4, 6, 7, 9, 8];
 var evens = [];
 
-for (var counter = 0; counter < inputArray.length; ++counter) {
+for (var counter = 0; counter < inputArray.length; counter++) {
   if ((inputArray[counter] % 2) === 0) {
     evens.push(inputArray[counter]);
   }
-};
+}
 
-console.log(evens)
+console.log(evens);
+
+// refactor for 2,4,6,8
+
+var newEvens = inputArray.filter(function(number) {
+  return (number % 2 === 0);
+});
+
+console.log(newEvens);
+
+// top-secret
+// var es2015Evens = inputArray.filter(n => n % 2 === 0);
+
+// console.log(es2015Evens);
+
 
 // "We built this city"
 
-
-// function myObject(){
-//     this.iAm = 'an object';
-//     this.whatAmI = function(){
-//         alert('I am ' + this.iAm);
-//     };
-// };
-
-
-function Athlete(){
-    this.name = "";
-    this.age = "";
-    this.sport = "";
-    this.quote = "";
-};
+function Athlete(name, age, sport, quote){
+    this.name = name;
+    this.age = age;
+    this.sport = sport;
+    this.quote = quote;
+}
 
 
 // DRIVER CODE
 
-var michaelPhelps = new Athlete("Michael Phelps", 29, "swimming", "It's medicinal I swear!")
-console.log(michaelPhelps.constructor === Athlete)
-console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps.quote)
+var michaelPhelps = new Athlete("Michael Phelps", 29, "swimming", "It's medicinal I swear!");
+console.log(michaelPhelps.constructor === Athlete);
+console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps.quote);
 
 
 /*
@@ -131,3 +132,4 @@ full answer to this question (idea light bulb goes on for weekly tech
 blog assignment).
 
 */
+
