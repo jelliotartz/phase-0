@@ -35,23 +35,24 @@ move: function(direction) {
   else if(direction === 'down'){
     player.posY -=10;
   }
-//when player moves, dragon moves too
+
+  //when player moves, dragon moves too
   dragon.posX = Math.floor((Math.random()*100)+1);
   dragon.posY = Math.floor((Math.random()*100)+1);
   console.log("Dragon's position is " + dragon.posX + "," + dragon.posY);
 
-//Display where player is
-console.log("Player's position is " + player.posX + "," + player.posY);
+  //Display where player is
+  console.log("Player's position is " + player.posX + "," + player.posY);
 
-//After every move, check if the player is near the dragon or the gold
-if(player.posX === dragon.posX && player.posY === dragon.posY){
-console.log("You encountered the dragon, Game Over!");
+  //After every move, check if the player is near the dragon or the gold
+  if(player.posX === dragon.posX && player.posY === dragon.posY){
+  console.log("You encountered the dragon, Game Over!");
 }
 
-else if(player.posX === gold.posX && player.posY === gold.posY){
-  player.success = true;
-  player.gold = 100;
-  console.log("You reached the gold, you win!!");
+  else if(player.posX === gold.posX && player.posY === gold.posY){
+    player.success = true;
+    player.gold = 100;
+    console.log("You reached the gold, you win!!");
 }
 
 }
