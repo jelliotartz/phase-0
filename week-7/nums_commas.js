@@ -158,12 +158,14 @@ have, and we spent a ton of time just trying to get the basic code
 syntax correct. When it finally ran, we didn't even really understand
 what we had been doing wrong. It was like it finally just decided to
 run, and we had just been flailing around trying code, getting errors,
-changing things, and trying again. At one point we moved from coderpad
-to Sublime, and that switch coincided with when we got the MVP/initial
-solution code to run... I don't think getting the code to run had
-anything to do with switching environments, but like I said, we're at
-a loss to explain what was wrong with our code and what we changed
-to make it finally work.
+changing things, and trying again, and in the end, we had the right
+idea all along, but something just was keeping it from running
+correctly. At one point we moved from coderpad to Sublime, and that
+switch coincided with when we got the MVP/initial solution code to
+run... I don't think getting the code to run had anything to do with
+switching environments, but like I said, we're at a loss to explain
+what was wrong with our code and what we changed to make it finally
+work.
 
 What did you learn about iterating over arrays in JavaScript?
 
