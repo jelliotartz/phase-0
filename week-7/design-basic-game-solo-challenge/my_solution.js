@@ -18,7 +18,7 @@ Create four methods that will execute movement in these four directions.
 
 Create a "Nazi" object and give it a random position.
 
-Create an "Ark of the Covenant" object and give it a random position. This position will be fixed throughout the duration of the game.
+Create an "lost Ark" object and give it a random position. This position will be fixed throughout the duration of the game.
 
 Move Indiana Jones, and randomly reassign the position of the Nazi.
 
@@ -38,22 +38,175 @@ Accept input for next move of Indiana Jones, UNTIL:
 
 // Initial Code
 
+
+// Indiana Jones character
 var indianaJones = {
   posX: 0,
   posY: 0,
-  ark: 0,
   success: false,
 
   move:function(direction) {
+    if(direction === 'forward'){
+      this.posX +=1;
+    }
+    else if(direction === 'up'){
+      this.posY += 1;
+    }
+};
 
+
+// The objective: make IJ's posX and posY match this object's posX and posY
+var lostArk = {
+
+};
+
+function setCoordinate() {
+  return  Math.floor((Math.random()*10)+1);
+}
+
+// function to begin the game.
+function setupGame() {
+  lostArk.posX = setCoordinate();
+  lostArk.posY = setCoordinate();
+  indianaJones.posX = 0;
+  indianaJones.posY = 0;
+}
+
+
+// When Indy moves, the Nazi moves to a new random position
+nazi.posX = Math.floor((Math.random()*10)+1);
+nazi.posY = Math.floor((Math.random()*10)+1);
+console.log("Nazi's position is " + nazi.posX + "," + nazi.posY);
+
+
+
+
+// ENDGAME
+    // After every move, check if the Nazi has 'found' Indy
+    if(indianaJones.posX === nazi.posX && indianaJones.posY === nazi.posY){
+      console.log("The Nazi found you! Game Over!");
+    }
+
+    else if(indianaJones.posX === lostArk.posX && indianaJones.posY === lostArk.posY){
+    indianaJones.success = true;
+    console.log("You found the Ark! Congratulations, Dr. Jones!!");
+    }
+
+
+
+// MOVING INDIANA JONES
+
+function isPlaying() {
+  //
+}
+
+function play() {
+  setupGame();
+
+  var playing = true;
+
+  while (playing) {
+    playing = isPlaying();
   }
 }
 
-var arkOfTheCovenant = {
-  posX = function() {
+// Output Indy's position
+console.log("Indy's position is " + indianaJones.posX + "," + indianaJones.posY);
 
-  }
+
+
+/* NEW PSEUDOCODE
+
+var indy
+  posx
+  posy
+  success
+  function:move
+
+
+
+// the lost ark is set once, at game begin, and doesn't move.
+var lostark
+  lostArk.posX = setCoordinate();
+  lostArk.posY = setCoordinate();
+
+
+// the nazi moves around randomly each time indiana jones moves
+var nazi = {
+  // posX: Math.floor((Math.random()*10)+1),
+  // posY: Math.floor((Math.random()*10)+1)
+};
+
+
+// function to begin the game.
+function setupGame() {
+  lostArk.posX = setCoordinate();
+  lostArk.posY = setCoordinate();
+  indianaJones.posX = 0;
+  indianaJones.posY = 0;
 }
+
+// function that accepts input from user and moves IJ accordingly
+  output result of user input as IJ's new coordinate position
+  indianaJones.newposX =
+  indianaJones.newposY =
+
+  question- how to get user input?
+
+    user will input one of two commands: forward or up.
+
+    if user input = forward
+      indianaJones.posX gets 1 added to it.
+
+    if user input = up
+      indianaJones.posY gets 1 added to it.
+
+  After each move, output new position of IJ, also output new (ramdomly generated) position of nazi.
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+function randomDirection() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("The Ark is located at " + lostArk.posX + "," + lostArk.posY);
+
+
+// indianaJones.move('up');
+indianaJones.move('forward');
+
 
 
 
@@ -65,38 +218,8 @@ var arkOfTheCovenant = {
 
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
-
 
 /*
 
-var homer = {
-  posX: 0,
-  posY: 0
-}
-var beer = {
-  posX: function() {
-    // gereate random coordat
-  }
-}
-var bar = {}
-
-
-
-
-function move(x, y) {
-
-}
-
-function update() {
-
-}
 
 */
