@@ -7,7 +7,8 @@
 
 
 
-var myFirstVariable = "Hello ", myNextVariable = "World!";
+var myFirstVariable = "Hello ",
+    myNextVariable = "World!";
 
 console.log(myFirstVariable + myNextVariable);
 
@@ -25,8 +26,8 @@ console.log(myFirstVariable + myNextVariable);
 var triangle = "#";
 
 while (triangle.length < 8) {
-  console.log(triangle);
-  triangle = triangle + "#"
+    console.log(triangle);
+    triangle = triangle + "#"
 }
 
 
@@ -37,13 +38,13 @@ while (triangle.length < 8) {
 var fizzBuzz = 1;
 
 while (fizzBuzz < 101) {
-  if (fizzBuzz % 3 == 0)
-    console.log("Fizz");
-  else if (fizzBuzz % 5 == 0 && fizzBuzz % 3 != 0)
-    console.log("Buzz");
-  else
-    console.log(fizzBuzz);
-  fizzBuzz++;
+    if (fizzBuzz % 3 == 0)
+        console.log("Fizz");
+    else if (fizzBuzz % 5 == 0 && fizzBuzz % 3 != 0)
+        console.log("Buzz");
+    else
+        console.log(fizzBuzz);
+    fizzBuzz++;
 }
 
 // variation 2
@@ -52,15 +53,15 @@ while (fizzBuzz < 101) {
 var fizzBuzz = 1;
 
 while (fizzBuzz < 101) {
-  if (fizzBuzz % 3 == 0 && fizzBuzz % 5 == 0)
-    console.log("FizzBuzz");
-  else if (fizzBuzz % 3 == 0)
-    console.log("Fizz");
-  else if (fizzBuzz % 5 == 0)
-    console.log("Buzz");
-  else
-    console.log(fizzBuzz);
-  fizzBuzz++;
+    if (fizzBuzz % 3 == 0 && fizzBuzz % 5 == 0)
+        console.log("FizzBuzz");
+    else if (fizzBuzz % 3 == 0)
+        console.log("Fizz");
+    else if (fizzBuzz % 5 == 0)
+        console.log("Buzz");
+    else
+        console.log(fizzBuzz);
+    fizzBuzz++;
 }
 
 
@@ -70,9 +71,9 @@ var counter = 1;
 var board = (" # # # #\n# # # #");
 
 
-while(counter < 4) {
-  console.log(board);
-  counter++;
+while (counter < 4) {
+    console.log(board);
+    counter++;
 }
 
 console.log(board);
@@ -84,13 +85,13 @@ var size = 20;
 var board = "";
 
 for (var y = 0; y < size; y++) {
-  for (var x = 0; x < size; x++) {
-    if ((x + y) % 2 == 0)
-      board += " ";
-    else
-      board += "#";
-  }
-  board += "\n";
+    for (var x = 0; x < size; x++) {
+        if ((x + y) % 2 == 0)
+            board += " ";
+        else
+            board += "#";
+    }
+    board += "\n";
 }
 
 console.log(board);
@@ -117,10 +118,10 @@ correct position) to happen.
 // Complete the `minimum` exercise.
 
 function min(a, b) {
-  if (a < b)
-    return a;
-  else
-    return b;
+    if (a < b)
+        return a;
+    else
+        return b;
 }
 
 console.log(min(0, 10));
@@ -133,10 +134,10 @@ console.log(min(0, 10));
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
 
 var me = {
-  name: "James Artz",
-  age: 37,
-  favoriteFoods: ["Pasta Marinara", "Lobster", "Blueberries"],
-  quirk: "My cats are immigrants"
+    name: "James Artz",
+    age: 37,
+    favoriteFoods: ["Pasta Marinara", "Lobster", "Blueberries"],
+    quirk: "My cats are immigrants"
 };
 
 
