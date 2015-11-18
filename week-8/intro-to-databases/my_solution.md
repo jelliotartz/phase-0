@@ -61,11 +61,15 @@ WHERE region_name LIKE '%Central%';
 
 ######Select all of the region names and the state names in ascending order by regional id:
 
-`SELECT regions.region_name,states.state_name`
-`FROM regions`
-`LEFT JOIN states`
-`ON regions.id=states.region_id`
-`ORDER BY regions.id ASC;`
+
+```
+SELECT regions.region_name,states.state_name
+FROM regions
+LEFT JOIN states
+ON regions.id=states.region_id
+ORDER BY regions.id ASC;
+
+```
 
 ## `persons` and `outfits` Schema
 Here's a [link](./outfit_db.png) to my snazzy Schema.
