@@ -10,13 +10,15 @@
 Select all data for all states: 
 
 ```
-SELECT * FROM states;
+SELECT * 
+FROM states;
 ```
 
 ######Select all data for the regions: 
 
 ```
-SELECT * FROM regions;
+SELECT * 
+FROM regions;
 ```
 
 ######Select the `state_name` and `population` for all states: 
