@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Jon Clayton
+// This challenge took me 3 hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -41,7 +41,53 @@ var voteCount = {
   treasurer: {}
 }
 
-/* The name of each student receiving a vote for an office should become a property
+/*
+Pseudocode for function to populate voteCount
+
+Input: nested object  
+
+Output: function doesn't return anything, but changes var voteCount 
+to tally the votes in the input object.
+
+steps:
+
+Loop outside: iterate over the nested input object, which will allow
+us to operate one at a time on each ballot, which includes votes for
+multiple offices.
+
+Loop inside: iterate over each ballot, inspecting each individual vote
+(a single office/candidate combination).
+
+[create the office/candidate combo within voteCount, if necessary]
+
+Add 1 to the number of votes received by the candidate for the office. 
+
+
+*/
+
+// __________________________________________
+// Initial Solution
+
+
+
+function tally(votes) {
+  for (var voter in votes) {
+    for (var office in votes[voter]) {
+      if (voteCount[office][votes[voter][office]] == undefined) {
+        voteCount[office][votes[voter][office]] = 0
+      }
+      voteCount[office][votes[voter][office]] += 1;
+    }
+  }  
+};
+
+
+tally(votes);
+// console.log(voteCount);
+
+/* 
+
+The name of each student receiving a vote for an office should become a property
 of the respective office in voteCount.  After Alex's votes have been tallied,
 voteCount would be ...
 
@@ -56,7 +102,10 @@ voteCount would be ...
 
 
 /* Once the votes have been tallied, assign each officer position the name of the
-student who received the most votes. */
+student who received the most votes. 
+
+
+*/
 var officers = {
   president: undefined,
   vicePresident: undefined,
@@ -64,29 +113,76 @@ var officers = {
   treasurer: undefined
 }
 
-// Pseudocode
 
+/*
 
-// __________________________________________
-// Initial Solution
+pseudocode
 
+input: nested object.
+output: pick a property from input nested object based on the steps below.
 
+steps
 
+Outside loop: iterate over nested object, which will allow us to operate on each office individually.
 
+Inside loop: iterate over each office, operating on candidate names.
 
+[Set officers["president"] as undefined]
+
+if office is undefined, give current candidate the office
+
+set office to the current candidate if that candidate has more votes than the current officer.
+
+Identify the highest value associated with the candidate names.
+
+*/
+
+function officeMaker (voteCount) {
+  for (var office in voteCount) {
+    for (var candidate in voteCount[office]) {
+      if (officers[office] == undefined) {officers[office] = candidate};
+      if (voteCount[office][candidate] > voteCount[office][officers[office]]) {
+        officers[office] = candidate;
+      }
+    }
+  }
+}
+
+officeMaker(voteCount);
 
 
 // __________________________________________
 // Refactored Solution
 
-
-
-
-
+/* We couldn't find any significant ways to refactor these functions.
+/* Let us know if anything comes to mind!
 
 // __________________________________________
 // Reflection
 
+/*
+
+What did you learn about iterating over nested objects in JavaScript?
+
+The for...in sequence is a useful method for iterating over nested
+objects in JS. You can create variables within the for...in sequence,
+no need to declare empty variables beforehand.
+
+Were you able to find useful methods to help you with this?
+
+We looked up the for...in statement in the MDS guide, but that was
+about the only 'method' we utilized. We used if conditions in the
+officeMaker function, but that's not really a method.
+
+What concepts were solidified in the process of working through this challenge?
+
+I'm still getting comfortable with the basics, so it's all good
+practice for me. The for...in statement was a good concept to get
+practice with, and working with nested objects is also still less than
+100% clear and easy for me.
+
+
+*/
 
 
 
@@ -94,6 +190,8 @@ var officers = {
 
 // __________________________________________
 // Test Code:  Do not alter code below this line.
+
+
 
 
 function assert(test, message, test_number) {
@@ -152,3 +250,5 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+
+
