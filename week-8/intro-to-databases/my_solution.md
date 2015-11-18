@@ -94,9 +94,6 @@ Here's a [link](./outfit_db.png) to my snazzy Schema.
 
 ## Reflection
 
-
-<!--
-
 What are databases for?
 
 Databases allow you to store and access data. They are especially
@@ -136,11 +133,4 @@ seems like ALL CAPS for db query commands; dot notation for field
 names within tables; semicolon tells the console that you're ready to
 execute the command. Many of the guidelines seem like programming
 language basics.
-
-
-
-
--->
-
-
 
