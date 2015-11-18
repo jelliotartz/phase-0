@@ -94,13 +94,13 @@ Here's a [link](./outfit_db.png) to my snazzy Schema.
 
 ## Reflection
 
-What are databases for?
+####What are databases for?
 
 Databases allow you to store and access data. They are especially
 useful for large amounts of data, because they can make it easy to
 quickly and efficiently organize and access information.
 
-What is a one-to-many relationship?
+####What is a one-to-many relationship?
 
 A one-to-many relationship describes how one type of data relates to
 another. As the name suggests, ONE type of data will have many
@@ -113,8 +113,7 @@ state_name is one-to-many.
 There are also one-to-one and many-to-many relationship types in DB
 theory.
 
-What is a primary key? What is a foreign key? How can you determine
-which is which?
+####What is a primary key? What is a foreign key? How can you determine which is which?
 
 A primary key is a number that uniquely identifies each instance in a
 database. A foreign key is a number on a different table that matches
@@ -122,8 +121,7 @@ the primary key, thereby linking the two together. You have to set the
 relationship of primary key and foreign key in order to integrate
 separate tables in a database management system.
 
-How can you select information out of a SQL database? What are some
-general guidelines for that?
+####How can you select information out of a SQL database? What are some general guidelines for that?
 
 SELECT is the command used to select information out of an SQL
 database. There are lots of commands and guidelines that can be added
