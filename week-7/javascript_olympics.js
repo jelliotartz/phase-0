@@ -21,6 +21,24 @@ athletes.event = "Hurdles";
 
 console.log(win(athletes));
 
+/* other examples of how to complete this challenge:
+
+var athletes = [
+  {name: "Hussein Bolt", event: "100 m. Dash"},
+  {name: "Carrot Top", event: "Snowboarding"}
+]
+
+function winner(array) {
+  var arrayLength = array.length;
+  for (var i = 0; i < arrayLength; i++) {
+    array[i].won = true;
+    console.log(array[i].name + " won the " + array[i].event + " event!")
+  }
+}
+
+winner(athletes)
+
+*/
 
 // Jumble your words
 

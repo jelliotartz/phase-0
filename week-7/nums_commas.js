@@ -139,6 +139,69 @@ nums = 1234567890;
 console.log(nums.toLocaleString());
 
 
+/* Other ways to solve this challenge:
+
+// Initial Solution
+var separateComma = function(integer) {
+
+  var array = integer.toString().split("").reverse();
+  for (var i = 3 ; i < array.length; i+=4) {
+    array.splice(i,0,',');
+  };
+  var finalInteger = array.reverse().join('');
+  console.log(finalInteger)
+}
+
+separateComma(1234567);
+
+
+// Refactored Solution
+var separateComma = function(integer) {
+  var array = integer.toString().split("").reverse();
+  for (var i = 3 ; i < array.length; i+=4) {
+    array.splice(i,0,',');
+  };
+  console.log(array.reverse().join(''));
+
+
+Yet another approach: 
+
+// Initial Solution
+
+// Initial Solution
+// function commas(integer) {
+//   var integerString = integer.toString();
+//   if (integer < 1000)
+//     console.log(integer);
+//   else
+//     for (var counter=integerString.length - 3; counter > 0; counter--) {
+//     console.log(integerString).slice(-3, 0, ',');  
+//     }
+  
+// }
+
+// commas(123456789012)
+
+
+
+// Refactored Solution
+
+function commas( number )
+{
+    var i = number.length % 3;
+    var parts = i ? [ number.substr( 0, i ) ] : [];
+    for( ; i < number.length ; i += 3 )
+    {
+        parts.push( number.substr( i, 3 ) );
+    }
+    return parts.join(',');
+}
+
+console.log(commas("3131313"))
+
+  */
+
+
 
 /* Reflections
 
