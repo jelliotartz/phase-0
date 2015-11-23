@@ -185,6 +185,111 @@ practice with, and working with nested objects is also still less than
 */
 
 
+/*
+
+other solutions to this challenge: 
+
+
+for(people in votes){
+  for(key in voteCount){
+    voteCount[key][people] = 0;
+  }
+}
+
+
+for(people in votes){
+  for(office in votes[people]){
+    voteCount[office][votes[people][office]] ++;
+  }
+}
+
+
+for(spot in voteCount){
+  var largest = 0;
+  for(num in voteCount[spot]){
+    if(voteCount[spot][num] >= largest){
+      largest = voteCount[spot][num];
+      officers[spot] = num
+    }
+  }
+}
+
+console.log(officers);
+
+#####################
+
+for (var key in votes){
+  voteCount.president[votes[key].president] = 0;
+  voteCount.vicePresident[votes[key].vicePresident] = 0;
+  voteCount.secretary[votes[key].secretary] = 0;
+  voteCount.treasurer[votes[key].treasurer] = 0;  
+};
+
+for (var key in votes){
+  voteCount.president[votes[key].president]++;
+  voteCount.vicePresident[votes[key].vicePresident]++;
+  voteCount.secretary[votes[key].secretary]++;
+  voteCount.treasurer[votes[key].treasurer]++;  
+};
+
+for (var position in voteCount){
+  var values = new Array();
+  var max = 0;
+  
+  for (var nominee in voteCount[position]){
+    values.push(voteCount[position][nominee]);
+  };
+  
+  max = Math.max.apply( Math, values );=
+  
+  for (var nominee in voteCount[position]){
+    if (voteCount[position][nominee] == max){
+    officers[position] = nominee;
+    };
+  };
+
+};
+
+
+##############
+
+
+for (var key in votes) {
+  for (var position in voteCount){
+    voteCount[position][votes[key][position]] = 0;
+  }
+};
+
+
+for (var key in votes) {
+  for (var position in voteCount){
+    voteCount[position][votes[key][position]] += 1;
+  };
+};
+
+for (var position in voteCount){
+  var values = new Array();
+  var max = 0;
+  
+  for (var nominee in voteCount[position]){
+    values.push(voteCount[position][nominee]);
+  };
+  
+  max = Math.max.apply( Math, values );
+  
+  for (var nominee in voteCount[position]){
+    if (voteCount[position][nominee] == max){
+    officers[position] = nominee;
+    };
+  };
+
+};
+
+
+
+
+*/
+
 
 
 

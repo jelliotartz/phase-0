@@ -86,6 +86,69 @@ var gradebook = makeGradebook(students, scores);
 // console.log(gradebook);
 // console.log(gradebook.getAverage("Susan"));
 
+
+/* other solutions to the challenge: 
+
+var gradebook = {
+  addScore: function(name, score) {
+    this[name].testScores.push(score)
+  },
+  getAverage: function(name) {
+    return this[name].testScores.reduce(function(sum, next) {return sum + next;}) / this[name].testScores.length;
+  }
+};
+
+for (var i = 0; i < students.length; i++) {
+  gradebook[students[i]] = {testScores: scores[i]};
+};
+console.log(gradebook);
+
+// gradebook["getAverage"] = function(name) {
+//   return average(gradebook[name].testScores);
+// };
+
+function average(array) {
+  return array.reduce( function(sum, next) { return sum + next; }) / array.length;
+}
+console.log(gradebook);
+
+
+
+####### another approach: ###########
+
+var gradebook = {
+  Joseph: { testScores: scores[0]},
+  Susan: {testScores: scores[1]},
+  William: {testScores: scores[2]},
+  Elizabeth: {testScores: scores[3]},
+
+  addScore: function(name,score) {
+      gradebook[name].testScores.push(score);
+  },
+
+   getAverage: function(name) {
+       var studentArray = gradebook[name].testScores
+     return average(studentArray)
+      },
+};
+//used .forEach instead of a for loop
+function average(array) {
+  var total = 0
+  array.forEach(function(numbers){
+    total += numbers
+  })
+  return total/array.length
+};
+
+
+
+/*
+
+
+
+
+
+
 // __________________________________________
 // Reflect
 
