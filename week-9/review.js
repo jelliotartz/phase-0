@@ -50,14 +50,36 @@ A JS solution:
 factorial = function(input_integer) {
 	var output = 1;
 	for (var counter = 1; counter <= input_integer; counter++) {
-		output *= counter;
+		output = output * counter;
 	}
 	console.log(output);
 };
 
 factorial(5);
 
+// refactor:
 
+factorial = function(input_integer) {
+  var output = 1;
+  for (var counter = 1; counter <= input_integer; counter++) {
+    output *= counter;
+  }
+  console.log(output);
+};
+
+factorial(5);
+
+// another refactor
+
+factorial = function(input_integer) {
+  var output = 1;
+  for (var counter = input_integer; counter >= 1; counter--) {
+    output *= counter;
+  }
+  console.log(output);
+};
+
+factorial(5);
 
 /* Reflection
 
