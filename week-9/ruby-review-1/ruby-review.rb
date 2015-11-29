@@ -1,9 +1,10 @@
 # Introduction to Inheritance
 
-# I worked on this challenge with Chris Gomes
+# I worked on this challenge with Chris Gomes.
 
 
 # Pseudocode
+
 =begin
 
 Assume that Class Cohort has an instance variable for student
@@ -62,70 +63,125 @@ END
 =end
 
 
-
 # Initial Solution
 
-class GlobalCohort
+
+
+require 'date'
+
+class Cohort
   
+  attr_reader :name, :p0_start_date, :students
+
   def initialize(name, p0_start_date)
-  @name = name
-  @p0_start_date = p0_start_date
+    @name = name
+    @p0_start_date = p0_start_date
+    @students = []
   end
-  
-  @students = {}
-  @mail_list = []
-  
-  def add_student(name, email)
-    @students.name = name
-    @Students.email = email
+
+  def add_student(student)
+    students << student
   end
-  
-  def remove_student(name, email)
-    name = @students.name.delete
-    email = @students.email.delete
+
+  def remove_student(student)
+    students.delete(student)
   end
-  
+
   def currently_in_phase
-    if (DateTime.now.mjd - DateTime.parse(p0_start_date).mjd <= 63)
+    if (DateTime.now.jd - p0_start_date.jd <= 63)
       return 0
-    elsif (DateTime.now.mjd - DateTime.parse(p0_start_date).mjd <= 84)
+    elsif (DateTime.now.jd - p0_start_date.jd <= 84)
       return 1
-    elsif (DateTime.now.mjd - DateTime.parse(p0_start_date).mjd <= 105)
-       return 2
-    elsif (DateTime.now.mjd - DateTime.parse(p0_start_date).mjd <= 126)
-       return 3
+    elsif (DateTime.now.jd - p0_start_date.jd <= 105)
+      return 2
+    elsif (DateTime.now.jd - p0_start_date.jd <= 126)
+     return 3
     else
-      return "Graduated!"
+     return "Graduated!"
     end
   end
     
   def graduated?
-    if (DateTime.now.mjd - DateTime.parse(p0_start_date).mjd > 126)
+    if (DateTime.now.mjd - p0_start_date.mjd > 126)
       return true
     else
       return false
     end
   end
-  
-end
 
-class LocalCohort < GlobalCohort
-  
-  def initialize(name, p0_start_date, city)
-    @name = name
-    @p0_start_date = p0_start_date
-    @city = city
+  def immersive_start_date
+    DateTime.jd(p0_start_date.jd + 84)
   end
 
+  def graduation_date
+    DateTime.jd(p0_start_date.jd + 126)
+  end
+
+  def num_of_students
+    students.length
+  end
+
+
 end
 
+
+
+
+class LocalCohort < Cohort
+
+  attr_reader :city
+
+  def initialize(name, p0_start_date, city)
+    super(name, p0_start_date)
+    @city = city
+  end
+  
+
+end
+
+
+### driver code
+
+p island_foxes = LocalCohort.new("Island Foxes", DateTime.new(2015, 10, 1), "Chicago")
+
+p chorus_frogs = LocalCohort.new("Chorus Frogs", DateTime.new(2015, 11, 30), "New York")
+
+island_foxes.add_student("James Artz")
+
+p island_foxes
+
+island_foxes.remove_student("James Artz")
+
+p island_foxes
+
+p island_foxes.graduation_date
 
 # Refactored Solution
 
   def graduated?
-    (DateTime.now.mjd - DateTime.parse(p0_start_date).mjd > 126) ? true : false
+    (DateTime.now.mjd - @p0_start_date.mjd > 126) ? true : false
   end
 
 
-
 # Reflection
+
+=begin
+
+What concepts did you review in this challenge?
+
+I reviewed ruby classes, instance variables, class methods, and reader
+attributes. I also learned about inheritance in Ruby, which was new to
+me.
+
+
+What is still confusing to you about Ruby?
+
+I'd still like to get more practice with exercises that challenge my
+ability to use inheritance on different classes.
+
+What are you going to study to get more prepared for Phase 1?
+
+I think I'll do the Pez Dispenser challenge next.
+
+
+=end
