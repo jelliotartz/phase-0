@@ -49,8 +49,8 @@ A JS solution:
 
 factorial = function(input_integer) {
 	var output = 1;
-	for(var counter = 1; counter <= input_integer; counter++) {
-		output = output * counter;
+	for (var counter = 1; counter <= input_integer; counter++) {
+		output *= counter;
 	}
 	console.log(output);
 };
@@ -65,8 +65,7 @@ I wanted to use the "standard JS counter" method (var counter = 1;
 counter <= input_integer; counter++), so I decided to count up to the
 input integer, rather than the traditional count down to 1. 
 
-I'm sure
-there are ways to refactor this, but I'm going to move on to some
+I'm sure there are ways to refactor this, but I'm going to move on to some
 other challenges, and then maybe come back to it in the future.
 
 */
